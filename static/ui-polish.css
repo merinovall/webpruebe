@@ -1,0 +1,150 @@
+/* V8 — capa visual y de UX. Paleta inspirada en la referencia aportada por el usuario.
+   No reutiliza marcas, textos, fotografías ni código de terceros. */
+:root{
+  --navy:#133362;
+  --navy-deep:#0a1d3b;
+  --navy-soft:#1d467d;
+  --cream:#f7f2e8;
+  --white:#ffffff;
+  --gold:#d7b46b;
+  --gold-soft:#ecd49c;
+  --line:#d7deea;
+  --muted:#65748d;
+  --shadow:0 20px 60px rgba(7,25,52,.16);
+}
+html{scroll-padding-top:88px}
+body{background:#f7f8fb;color:#13233d}
+.topline{display:none}
+/* Barra superior: transparente sobre la portada, con legibilidad y blur discreto. */
+.header,.header.scrolled{
+  position:absolute;left:0;right:0;top:0;z-index:50;
+  width:100%;max-width:none;margin:0;border:0;border-radius:0;
+  background:linear-gradient(180deg,rgba(6,21,45,.62),rgba(6,21,45,.12));
+  box-shadow:none;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  transition:background .28s ease,box-shadow .28s ease,backdrop-filter .28s ease;
+}
+.header.scrolled{position:fixed;background:linear-gradient(180deg,rgba(4,16,34,.58),rgba(4,16,34,.20));box-shadow:0 10px 35px rgba(3,16,35,.16);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.12)}
+.nav-wrap{width:min(1320px,94%);min-height:76px;padding:10px 0;display:flex;align-items:center;gap:18px}
+.header .brand,.header.scrolled .brand{font-size:19px;color:#fff;gap:10px}
+.header .brand small{color:rgba(255,255,255,.72);font-size:8px;letter-spacing:1.5px}
+.brand-logo{width:44px;height:38px;border:1px solid rgba(255,255,255,.35);border-radius:10px;object-fit:contain}
+.header nav{margin-left:auto;gap:18px;font-size:13px}
+.header nav a,.header.scrolled nav a{color:rgba(255,255,255,.9);padding:12px 2px}
+.header nav a:hover,.header nav a.current{color:#fff}
+.header nav a::after{background:var(--gold);bottom:5px}
+.header .account-btn{color:#fff;border-color:rgba(255,255,255,.42);background:rgba(255,255,255,.08);border-radius:999px}
+.header .account-btn:hover{background:rgba(255,255,255,.15)}
+.header .header-book{background:var(--gold);color:#13233d;border-color:var(--gold);border-radius:999px;padding:11px 18px;box-shadow:0 8px 25px rgba(0,0,0,.16)}
+.header .header-book:hover{background:var(--gold-soft);color:#0b2347}
+.menu-toggle.icon-btn{color:#fff;background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.3);border-radius:12px}
+.hero{width:100%;max-width:none;margin:0;border:0;border-radius:0;height:700px;box-shadow:none;background:var(--navy)}
+.hero .astral-shade{background:linear-gradient(90deg,rgba(4,18,39,.88),rgba(9,31,64,.48) 48%,rgba(9,31,64,.08) 82%),linear-gradient(0deg,rgba(5,18,39,.75),transparent 58%)}
+.hero .hero-copy{padding-top:145px;width:min(1180px,88%);margin:auto}
+.hero .hero-copy h1{color:#fff;font-weight:500}
+.hero .hero-copy>p{color:rgba(255,255,255,.88);max-width:520px}
+.hero .eyebrow{color:var(--gold-soft);background:rgba(8,27,57,.35);border:1px solid rgba(236,212,156,.45);border-radius:999px;padding:7px 12px}
+.gold,.hero .gold{background:var(--gold);color:#10274c;border-color:var(--gold)}
+.gold:hover,.hero .gold:hover{background:var(--gold-soft);color:#0b2347}
+.hero-link{color:#fff;border-bottom-color:rgba(255,255,255,.4)}
+.hero-meta{color:rgba(255,255,255,.78)}
+.astral-card{background:rgba(10,31,63,.64);border-color:rgba(255,255,255,.25);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.search-wrap{margin-top:-38px;position:relative;z-index:8}
+.search-bar{background:rgba(255,255,255,.97);border:1px solid rgba(16,45,86,.12);border-radius:18px;box-shadow:var(--shadow)}
+.search-title strong{color:#13233d}
+.search-bar label{color:#53627a;border-color:#e2e7ef}
+.search-bar input,.search-bar select{background:#f7f9fc;color:#13233d;border:1px solid #d9e0ea;border-radius:10px}
+.search-bar .dark{background:var(--navy);color:#fff;border-color:var(--navy)}
+.search-bar .dark:hover{background:#1c4b87}
+.section,.about-section{color:#172742}
+.section-heading h2,.about-section h2,.services h2{color:#13233d}
+.eyebrow,.text-btn,.room-detail,.service-icon,.google-reviews{color:#b48736}
+.room-card{background:#fff;border:1px solid #e0e6ef;border-radius:18px;box-shadow:0 10px 35px rgba(10,30,60,.08)}
+.room-card:hover{border-color:#caa35c;box-shadow:0 18px 48px rgba(10,30,60,.13)}
+.room-body h3{color:#13233d}.room-description{color:#63718a}
+.room-photo .number,.example-tag{background:rgba(9,29,60,.88);color:#f2dba8;border-color:rgba(255,255,255,.2)}
+.room-specs,.room-bottom,.room-detail{border-color:#e1e6ed}
+.amenities span,.detail-specs span{background:#eef3f9;color:#294568;border-color:#d9e1ec}
+.price{color:#a5782e}
+.services{background:linear-gradient(135deg,#102f5d,#173f74);border-block:0}
+.services .eyebrow,.services .service-icon{color:#f0d79e}
+.service-grid article{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.16);border-radius:18px}
+.service-grid h3{color:#fff}.service-grid p,.services .section-heading p{color:rgba(255,255,255,.72)}
+.gallery button{background:#fff;border-color:#dfe5ee;border-radius:18px;box-shadow:0 10px 30px rgba(10,30,60,.08)}
+.gallery span{background:#fff;color:#13233d}.gallery span small{color:#718097}
+.reviews-section{background:#edf3f9;border-color:#dbe3ef}
+.review-card,.empty-card{background:#fff;border-color:#dfe5ee}.empty-card p,.review-card small{color:#68778e}
+.stars{color:#b48736}.location-details strong{color:#13233d}
+.map-wrap,.map-placeholder{background:#fff;color:#13233d;border-color:#dce3ec;border-radius:18px}
+.map-toolbar,.map-caption{border-color:#e0e6ee}.map-tab.active{background:var(--navy);color:#fff}
+.dark{background:var(--navy);color:#fff;border-color:var(--navy)}.dark:hover{background:#1c4b87}
+.outline{color:#23466f;border-color:#9aaac0;background:#fff}.outline:hover{color:#13233d;background:#edf3f9}
+.notice,.booking-summary,.detail-policy{background:#eef3f9;color:#254365;border-color:#d6e0ec}
+.badge,.badge.confirmada,.badge.completada{background:#edf3f9;color:#315578;border-color:#cdd9e8}
+.auth-dialog,.content-dialog{background:#fff;color:#13233d;border:1px solid #dce4ee;border-radius:24px;box-shadow:0 35px 100px rgba(4,18,39,.3);overflow:hidden}
+.auth-dialog{position:fixed;inset:0;margin:auto;width:min(920px,94vw);max-width:920px;height:min(610px,calc(100dvh - 48px));max-height:calc(100dvh - 48px);padding:0;display:grid;grid-template-columns:.9fr 1.1fr;overflow:auto;overscroll-behavior:contain}
+.auth-art{min-height:0;height:100%;background:var(--navy)}
+.auth-art img{height:100%;filter:saturate(.9)}
+.auth-art:after{background:linear-gradient(0deg,rgba(5,20,43,.92),rgba(10,35,70,.18))}
+.auth-art>div{padding:42px}.auth-art h2{color:#fff;font-size:40px}.auth-art p{color:rgba(255,255,255,.75)}
+.auth-content{padding:40px;position:relative;background:#fff}
+.auth-content>.muted,.auth-note,.separator{color:#68778e}
+.auth-tabs{background:#eef3f9;border:1px solid #d9e1ec;border-radius:999px;padding:4px}
+.auth-tabs button{border:0;border-radius:999px;color:#63718a}.auth-tabs button.active{background:var(--navy);color:#fff;box-shadow:0 4px 14px rgba(10,35,70,.16)}
+.password-wrap,.password-wrap input{background:#f7f9fc;color:#13233d;border-color:#d7e0ea}
+.password-wrap{border-radius:10px}.password-wrap input{border:0}.auth-content input,.auth-content select,.auth-content textarea{background:#f7f9fc;color:#13233d;border-color:#d7e0ea;border-radius:10px}
+.auth-content .gold{background:var(--navy);color:#fff;border-color:var(--navy)}.auth-content .gold:hover{background:#1c4b87}
+.auth-content .outline{background:#fff}.close.icon-btn{border-radius:50%;background:#eef3f9;color:#23466f;border-color:#d6dfeb}
+dialog::backdrop{background:rgba(3,13,30,.68);backdrop-filter:blur(7px)}
+.toast{background:var(--navy);color:#fff;border-color:#315b8e}
+footer{background:#081a35;border-color:#23466f}.footer-main .brand{color:#fff}.footer-bottom{border-color:#28466d;color:#aebbd0}.footer-main a{color:#cbd5e4}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+@media(max-width:900px){
+  .header nav.open{background:rgba(10,29,59,.96);border:1px solid rgba(255,255,255,.18);border-radius:16px;box-shadow:0 22px 55px rgba(0,0,0,.3)}
+  .hero{height:650px}.hero .hero-copy{padding-top:120px}
+  .auth-dialog{grid-template-columns:1fr;width:min(560px,94vw);height:auto;max-height:calc(100dvh - 32px);overflow:auto}.auth-art{display:none}.auth-content{padding:30px}
+}
+@media(max-width:600px){
+  .nav-wrap{width:94%;min-height:66px}.header .brand{font-size:14px}.header .brand small{font-size:7px}.brand-logo{width:36px;height:31px}
+  .header .account-btn{font-size:10px;padding:8px 11px}.header .header-book{display:none}
+  .hero{height:630px}.hero .hero-copy{padding-top:112px;width:88%}.hero-copy h1{font-size:clamp(46px,13vw,65px)}
+  .search-wrap{margin-top:-24px}.search-bar{border-radius:16px}
+  .auth-content{padding:24px}.auth-dialog{border-radius:20px}
+}
+@media(prefers-reduced-motion:reduce){.header,.header.scrolled{transition:none}}
+
+/* V10 — acceso limpio, cabecera transparente y estados de reserva. */
+.header,.header.scrolled{
+  position:absolute;left:0;right:0;top:0;width:100%;max-width:none;margin:0;
+  border:0;border-radius:0;
+  background:linear-gradient(180deg,rgba(7,24,49,.58),rgba(7,24,49,.08)) !important;
+  box-shadow:none !important;
+  backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);
+}
+.header.scrolled{
+  position:fixed;
+  background:linear-gradient(180deg,rgba(7,24,49,.52),rgba(7,24,49,.16)) !important;
+  border-bottom:1px solid rgba(255,255,255,.14);
+  box-shadow:0 10px 32px rgba(0,0,0,.12) !important;
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+}
+.header .brand,.header.scrolled .brand,.header nav a,.header.scrolled nav a{color:#fff !important}
+.header .brand small{color:rgba(255,255,255,.72) !important}
+.header .account-btn{color:#fff !important;background:rgba(255,255,255,.08) !important;border-color:rgba(255,255,255,.42) !important}
+.header .header-book{background:#d7b46b !important;color:#13233d !important}
+
+/* El acceso es exclusivamente un diálogo: nunca ocupa espacio dentro de la página. */
+.auth-dialog:not([open]){display:none}
+.auth-dialog[open]{
+  position:fixed !important;inset:0 !important;margin:auto !important;
+  width:min(920px,94vw) !important;height:min(610px,calc(100dvh - 40px)) !important;
+  max-height:calc(100dvh - 40px) !important;overflow:auto !important;
+  z-index:1000;
+}
+@media(max-width:700px){
+  .auth-dialog[open]{width:min(560px,94vw) !important;height:auto !important;max-height:calc(100dvh - 24px) !important}
+}
+.room-bottom .btn:disabled{background:#d8dde5 !important;color:#43536b !important;border-color:#c7cfdb !important;opacity:1 !important}
+
+/* v11 */
+.content-dialog{max-height:90dvh;overflow-y:auto;overscroll-behavior:contain;}
+.room-bottom .btn:disabled{cursor:default!important;animation:none!important;}

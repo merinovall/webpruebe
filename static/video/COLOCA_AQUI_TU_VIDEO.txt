@@ -1,0 +1,1 @@
+Coloca en esta carpeta tu archivo mi-video.mp4. No viene incluido porque no fue adjuntado. Recomendado: MP4 con video H.264, sin audio, 720p o 1080p, 10–25 segundos y comprimido para web. La portada conserva su imagen si falta el archivo o no se puede reproducir.

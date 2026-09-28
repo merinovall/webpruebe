@@ -1,0 +1,22 @@
+CÓMO ABRIR LA WEB COMPLETA
+
+Live Server muestra el diseño. Las cuentas y las reservas se guardan con Python.
+
+1. Extrae el ZIP nuevo en otra carpeta.
+2. Entra en hospedaje-rio-negro, donde aparecen iniciar.py y requirements.txt.
+3. En la barra de dirección del Explorador escribe cmd y pulsa Enter.
+4. Ejecuta cada línea por separado:
+
+py -3 -m venv .venv
+.venv\Scripts\python.exe -m pip install -r requirements.txt
+.venv\Scripts\python.exe preparar_demo.py
+.venv\Scripts\python.exe iniciar.py
+
+5. Abre http://127.0.0.1:5000 y mantén la terminal abierta.
+
+Cuenta inicial local: pruebaht@gmail.com
+Contraseña inicial: 132007
+Se exige cambiarla al entrar. Si ya la cambiaste, usa tu nueva contraseña.
+
+No necesitas desactivar la protección de Windows ni usar permisos de administrador.
+Google solo aparecerá cuando se configure su conexión oficial; no se activa con el correo de prueba.

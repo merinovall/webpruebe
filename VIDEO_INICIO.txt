@@ -1,0 +1,9 @@
+VIDEO DE PORTADA
+
+1. Copia tu archivo mi-video.mp4 a hospedaje-rio-negro/static/video/mi-video.mp4.
+2. Abre la web y recarga con Ctrl+F5.
+3. Al estar visible, el video se reproduce sin sonido y en bucle. Al salir de la portada o cambiar de pestaña se pausa. Puedes pausarlo con el botón de la portada.
+4. Si tienes activada la opción reducir movimiento, pulsa Reproducir video para iniciarlo manualmente.
+5. Si el navegador bloquea la reproducción, queda disponible el botón para iniciarlo. Si falta el archivo o falla, permanece la imagen de fondo.
+
+El MP4 no está incluido en el ZIP: solo recibimos tu ejemplo de código. Funciona desde el servidor Python y desde Live Server abierto en la carpeta raíz del proyecto. No pegues el Markdown del ejemplo directamente: contiene símbolos de formato que no son HTML válido.

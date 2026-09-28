@@ -1,0 +1,15 @@
+{
+  "environment": "Prueba local aislada: Waitress (4 hilos), SQLite, HTTP loopback. No representa capacidad de producción.",
+  "simultaneous_booking_requests": 20,
+  "created": 2,
+  "conflicts_correctly_rejected": 18,
+  "overbookings": 0,
+  "idempotent_retries": 5,
+  "reservations_from_retries": 1,
+  "availability_requests": 200,
+  "availability_concurrency": 20,
+  "availability_successes": 200,
+  "availability_seconds": 0.304,
+  "availability_p95_ms": 37.65,
+  "postgresql_production_tested": false
+}
